@@ -1,0 +1,262 @@
+body {
+    margin: 0 auto;
+    padding: 24px 16px 204px;
+    width: 960px;
+    min-height: 100vh;
+    position: relative;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.text {
+     width: 100%;
+    box-sizing: border-box;
+    background-color: lightgray;
+    padding: 21px;
+}
+
+.line {
+    padding: 0;
+    height: 0;
+    border: 0;
+    border-top: 1px solid grey;
+    margin: 22px 0;
+}
+
+.head {
+    height: 108px;
+    position: relative;
+}
+
+.head_elem {
+    position: absolute;
+    background: grey;
+
+    top: 0;
+}
+
+.head_logo {
+    height: 100%;
+    width: 122px;
+
+    left: 0;
+}
+
+.head_contact {
+    width: 280px;
+    height: 100%;
+
+    left: 145px;
+}
+
+.head_more {
+    right: 0;
+    width: 514px;
+    height: 100%;
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 185px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-bottom: 132px;
+}
+
+.left__menu {
+    font-weight: bold;
+    margin: 0;
+    display: block;
+    list-style-type: none;
+    padding: 13px;
+    background: grey;
+    color: white;
+}
+
+.left__menu-item {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.left__menu-item:hover {
+    text-decoration: underline;
+}
+
+.left__bottom {
+    position: absolute;
+    bottom: 0;
+    background: grey;
+}
+
+.center {
+    float: right;
+    width: 775px;
+}
+
+.center__element {
+
+    margin-left: 21px;
+    margin-bottom: 21px;
+    float: left;
+}
+
+.center__element:last-child {
+    margin-bottom: 0;
+}
+
+.half-width {
+    position: relative;
+}
+
+.half-width__left {
+    float: left;
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 8px;
+    background: lightgray;
+    background-clip: content-box;
+}
+
+.half-width__right {
+    position: absolute;
+    right: 0;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    padding-left: 7px;
+    background: lightgray;
+    background-clip: content-box;
+}
+
+.image {
+    background: lightgray;
+}
+
+.image-add-button {
+    width: 134px;
+    height: 152px;
+    text-align: center;
+    line-height: 152px;
+    font-size: 50px;
+    color: grey;
+    opacity: 0.5;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px dashed darkgray;
+    background: #eaeaea;
+}
+.image-add-button:hover {
+opacity: 1;
+}
+
+.footer {
+    height: 180px;
+    width: 960px;
+    position: absolute;
+    bottom: 24px;
+}
+
+.footer__left {
+    height: 100%;
+    width: 300px;
+    position: absolute;
+    left: 0;
+    padding: 13px 26px;
+    box-sizing: border-box;
+
+    background: grey;
+    color: white;
+}
+
+.footer__left-menu {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    list-style-type: none;
+    -webkit-column-width: 150px;
+    -moz-column-width: 150px;
+    -o-column-width: 150px;
+    -ms-column-width: 150px;
+    column-width: 150px;
+
+    width: 50%;
+}
+
+.footer__left-menu-item {
+    cursor: pointer;
+}
+
+.footer__left-menu-item:hover {
+    text-decoration: underline;
+}
+
+.footer__center {
+    position: absolute;
+    left: 326px;
+    width: 297px;
+    height: 100%;
+
+    background: grey;
+}
+
+.footer__center-menu {
+    color: white;
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+.footer__center-menu-item {
+    cursor: pointer;
+    position: relative;
+    padding-left: 10px;
+}
+
+.footer__center-menu-item:hover {
+    text-decoration: underline;
+}
+
+.footer__center-menu-item:before {
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+}
+
+.footer__right {
+    position: absolute;
+    right: 0;
+    width: 308px;
+    height: 100%;
+}
+
+.footer__right-top {
+    position: absolute;
+    top: 0;
+    width: 308px;
+    height: 77px;
+
+    background: grey;
+}
+
+.footer__right-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 308px;
+    height: 77px;
+
+    background: grey;
+}

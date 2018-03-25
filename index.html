@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="head">
+    <img src="" class="head_elem head_logo"/>
+    <div class="head_elem head_contact"></div>
+    <div class="head_elem head_more"></div>
+</div>
+
+<hr class="line"/>
+
+<div class="content">
+    <div class="content_element left">
+
+        <ul class="left__menu">
+            Создание сайтов
+            <li class="left__menu-item">Изготовление сайтов «под ключ»</li>
+            <li class="left__menu-item">Как мы работаем</li>
+            <li class="left__menu-item">Интеграция с 1С</li>
+            <li class="left__menu-item">Поддержка сайтов</li>
+            <li class="left__menu-item">Создание сайтов на Битрикс</li>
+            <li class="left__menu-item">Модули Битрикс</li>
+            <li class="left__menu-item">Купить Битрикс</li>
+            <li class="left__menu-item">Дизайн сайтов</li>
+            <li class="left__menu-item">Редизайн сайтов</li>
+            <li class="left__menu-item">Интернет-магазины</li>
+            <li class="left__menu-item">Создание логотипов</li>
+        </ul>
+
+        <img src="" width=185 height=132 alt="" title="" class="left__green left__bottom"/>
+    </div>
+    <div class="content_element center">
+        <div class="text center__element">
+            <strong>
+                PSD файл с макетом. Макет разбит по слоям и сгруппирован по папкам:
+            </strong> 
+            <ul>
+                <li>number - нумерация блоков (номера блоков верстать не нужно);</li>
+                <li>text - текстовые блоки (шрифт Arial, размер 14 пикселей, межстрочное расстояние 22 пикселя);</li>
+                <li>head - шапка сайта;</li>
+                <li>content - контентная область,
+                    которая в свою очередь делится на <strong>left</strong> и <strong>center</strong>;
+                </li>
+            </ul>
+
+            Текстовое описание задания и требования.
+        </div>
+
+        <img src="" width=134 height=152 alt="" title="" class="image center__element"/>
+        <img src="" width=134 height=152 alt="" title="" class="image center__element"/>
+        <img src="" width=134 height=152 alt="" title="" class="image center__element"/>
+        <img src="" width=134 height=152 alt="" title="" class="image center__element"/>
+        <img src="" width=134 height=152 alt="" title="" class="image center__element"/>
+        <img src="" width=134 height=152 alt="" title="" class="image center__element"/>
+        <img src="" width=134 height=152 alt="" title="" class="image center__element"/>
+        <div class="image-add-button center__element" onclick="addImg(this);">+</div>
+
+        <div class="half-width center__element">
+            <div class="half-width__left">
+                <div class="text">
+                    Студия разработает полнофункциональный продукт
+                    ориентированный на целевую аудиторию и эффективно решающий
+                    поставленные перед ним маркетинговые задачи.
+                    Опыт работ и использование собственных технологий, позволяет
+                    предлагать услугу изготовления сайта в Москве в разумные сроки.
+                </div>
+            </div>
+            <div class="half-width__right">
+                <div class="text">
+                    Поисковое продвижение (раскрутка) ведется по коммерческим запросам,
+                    что позволяет многократно увеличить
+                    количество продаж с сайта при разумном рекламном бюджете.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<hr class="line"/>
+
+<div class="footer">
+    <div class="footer__left">
+        <ul class="footer__left-menu">
+            <li class="footer__left-menu-item">Пункт 01</li>
+            <li class="footer__left-menu-item">Пункт 02</li>
+            <li class="footer__left-menu-item">Пункт 03</li>
+            <li class="footer__left-menu-item">Пункт 04</li>
+            <li class="footer__left-menu-item">Пункт 05</li>
+            <li class="footer__left-menu-item">Пункт 06</li>
+            <li class="footer__left-menu-item">Пункт 07</li>
+            <li class="footer__left-menu-item">Пункт 08</li>
+            <li class="footer__left-menu-item">Пункт 09</li>
+            <li class="footer__left-menu-item">Пункт 10</li>
+            <li class="footer__left-menu-item">Пункт 11</li>
+            <li class="footer__left-menu-item">Пункт 12</li>
+            <li class="footer__left-menu-item">Пункт 13</li>
+            <li class="footer__left-menu-item">Пункт 14</li>
+        </ul>
+    </div>
+    <div class="footer__center">
+        <ul class="footer__center-menu">
+            <li class="footer__center-menu-item">Поисковое продвижение сайтов</li>
+            <li class="footer__center-menu-item">Тариф «Старт»</li>
+            <li class="footer__center-menu-item">Тариф «Продвижение Плюс»</li>
+            <li class="footer__center-menu-item">Тариф «Интернет-магазин»</li>
+            <li class="footer__center-menu-item">Тариф «Эксклюзив»</li>
+            <li class="footer__center-menu-item">Тариф «Контекст + SEO»</li>
+            <li class="footer__center-menu-item">Тариф «Регион»</li>
+        </ul>
+    </div>
+    <div class="footer__right">
+        <div class="footer__right-top"></div>
+        <img src="" width=308 height=77 alt="" title="" class="footer__right-bottom"/>
+    </div>
+</div>
+<script>
+    function addImg(el) {
+        var img = document.createElement('img');
+
+        img.classList.add('image');
+        img.classList.add('center__element');
+
+        img.setAttribute('width', '134');
+        img.setAttribute('height', '152');
+
+        el.parentNode.insertBefore(img, el);
+
+    }
+
+    window.addEventListener('click', function (e) {
+        if (e.target.classList.contains('image')) e.target.parentNode.removeChild(e.target);
+    })
+</script>
+</body>
+</html>
